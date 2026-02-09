@@ -47,6 +47,18 @@ local Button = MainTab:CreateButton({
    end,
 })
 
+local Input = MainTab:CreateInput({
+   Name = "Choose Victim",
+   CurrentValue = "",
+   PlaceholderText = "Roblox User",
+   RemoveTextAfterFocusLost = false,
+   Flag = "Input1",
+   Callback = function(Text)
+   -- The function that takes place when the input is changed
+   -- The variable (Text) is a string for the value in the text box
+   end,
+})
+
 local Tab = Window:CreateTab("👨 Player", nil) -- Title, Image
 
 local Tab = Window:CreateTab("💰 Farming", nil) -- Title, Image
